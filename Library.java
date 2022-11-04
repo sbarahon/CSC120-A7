@@ -1,5 +1,6 @@
 import java.util.Hashtable;
 
+/** Defines a Library class that extends Building */
 public class Library extends Building {
 
     private Hashtable<String, Boolean> collection;

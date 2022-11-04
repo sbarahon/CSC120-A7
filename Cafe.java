@@ -1,3 +1,4 @@
+/** Defines a Cafe class that extends Building */
 public class Cafe extends Building{
 
     private int nCoffeeOunces = 100; // The number of ounces of coffee remaining in inventory

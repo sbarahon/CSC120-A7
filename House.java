@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.lang.Math;
 
+/** Defines a House class that extends Building */
 public class House extends Building {
     private ArrayList<String> residents; 
     private boolean hasDiningRoom;

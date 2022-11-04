@@ -1,5 +1,6 @@
 import javax.management.RuntimeErrorException;
 
+/** Defines a Building class */
 public class Building {
 
     protected String name;

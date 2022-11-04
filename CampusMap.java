@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+/** Defines a CampusMap class */
 public class CampusMap {
 
     ArrayList<Building> buildings;
