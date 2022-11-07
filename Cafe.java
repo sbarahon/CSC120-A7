@@ -53,7 +53,6 @@ public class Cafe extends Building{
 
         this.nCoffeeOunces -= size; 
         this.nSugarPackets -= nSugarPackets;
-
     }
 
      /**
@@ -70,15 +69,11 @@ public class Cafe extends Building{
     }
 
     /**
-     * Takes user to desired floor
-     * @throws a runtime exception if user tries to use elevator to skip floors
+     * Throws an exception if person tries to use elevator
+     * @throws a runtime exception if user tries to use elevator
      */
     public void goToFloor(int floorNum){
-        if (Math.abs(floorNum - activeFloor)==1){
-            super.goToFloor(floorNum);
-        } else {
-        throw new RuntimeException("Sorry, no elevator available at this location!");
-        }
+        throw new RuntimeException("Sorry, no elevator available at this location!");    
     }
 
     /**

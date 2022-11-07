@@ -83,6 +83,9 @@ public class Building {
      * @return the building object
      */
     public Building enter() {
+        if (activeFloor != -1) {
+            throw new RuntimeException("You are already inside this Building.");
+        }
         this.activeFloor = 1;
         System.out.println("You are now inside " + this.name + " on the ground floor.");
         return this; // Return a pointer to the current building
@@ -118,6 +121,7 @@ public class Building {
             throw new RuntimeException("Invalid floor number. Valid range for this Building is 1-" + this.nFloors +".");
         }
         System.out.println("You are now on floor #" + floorNum + " of " + this.name);
+        this.activeFloor = -1; // We're leaving the building, so we no longer have a valid active floor
         this.activeFloor = floorNum;
     }
 
